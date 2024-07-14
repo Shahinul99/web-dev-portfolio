@@ -180,3 +180,40 @@ footer input[type="text"], footer input[type="email"], footer textarea {
     margin-bottom: 24px;
     border: none;
 }
+
+/* responsive style */
+
+@media screen and (max-width:576px) {
+    .skills-container, 
+    .resume-container,
+    .about-items,
+    .banner,
+    nav,
+    nav > ul,
+    footer{
+        flex-direction: column;
+    }
+
+    nav > ul {
+        gap: 20px;
+
+    }
+    .banner-content {
+        margin-left: 40px;
+    }
+    footer .about{
+        padding: 20px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .header {
+        background-image: none;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        width: calc(100% - 40px);
+    }
+    .btn-primary {
+        margin-bottom: 20px;
+    }
+}
